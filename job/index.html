@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Search Platform</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JobSearch</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="find_job.html">Find Jobs</a></li>
+                <li><a href="companies.html">Companies</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <main id="main-content">
+        <section class="hero">
+            <h1>Find Your Dream Job Today</h1>
+            <p>Search millions of jobs and get the inside scoop on companies with employee reviews, personalized salary tools, and more.</p>
+        </section>
+
+        <section class="search-section">
+            <form id="jobSearchForm" class="search-form">
+                <div class="search-inputs">
+                    <div class="input-group">
+                        <i class="fas fa-search"></i>
+                        <input type="text" id="jobSearch" placeholder="Job title, skills, or company">
+                    </div>
+                    <div class="input-group">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <input type="text" id="location" placeholder="Location">
+                    </div>
+                    <button type="submit" class="search-button">Search Jobs</button>
+                </div>
+            </form>
+            <div class="advanced-search">
+                <a href="#">Advanced Job Search</a>
+                <a href="#">Give Feedback</a>
+            </div>
+        </section>
+
+        <section class="cta-section">
+            <div class="cta-card">
+                <h3>Upload Your Resume</h3>
+                <p>Let employers find you with our resume database</p>
+                <button class="cta-button resume-button">Upload Resume</button>
+            </div>
+            <div class="cta-card">
+                <h3>Job Alert</h3>
+                <p>Create a job alert and get new jobs delivered daily</p>
+                <button class="cta-button">Create Alert</button>
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

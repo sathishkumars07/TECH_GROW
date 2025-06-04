@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Jobs - JobSearch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JobSearch</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find_job.html" class="active">Find Jobs</a></li>
+                <li><a href="companies.html">Companies</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="jobs-hero">
+            <h1>Find Your Next Opportunity</h1>
+            <p>Browse thousands of job listings from top companies in your area.</p>
+        </section>
+
+        <section class="job-filters">
+            <div class="filter-section">
+                <h3>Filter Jobs</h3>
+                <div class="filter-options">
+                    <div class="filter-group">
+                        <label for="job-type">Job Type</label>
+                        <select id="job-type">
+                            <option value="">All Types</option>
+                            <option value="fulltime">Full-time</option>
+                            <option value="parttime">Part-time</option>
+                            <option value="contract">Contract</option>
+                            <option value="internship">Internship</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="experience">Experience Level</label>
+                        <select id="experience">
+                            <option value="">All Levels</option>
+                            <option value="entry">Entry Level</option>
+                            <option value="mid">Mid Level</option>
+                            <option value="senior">Senior Level</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label for="salary">Salary Range</label>
+                        <select id="salary">
+                            <option value="">Any Salary</option>
+                            <option value="30">$30,000+</option>
+                            <option value="50">$50,000+</option>
+                            <option value="70">$70,000+</option>
+                            <option value="90">$90,000+</option>
+                        </select>
+                    </div>
+                    <button class="apply-filters">Apply Filters</button>
+                </div>
+            </div>
+        </section>
+
+        <section class="job-listings">
+            <div class="jobs-container">
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

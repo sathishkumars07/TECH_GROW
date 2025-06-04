@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Companies - JobSearch</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="logo">JobSearch</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="find_job.html">Find Jobs</a></li>
+                <li><a href="companies.html" class="active">Companies</a></li>
+            </ul>
+        </nav>
+        <div class="auth-buttons">
+            <button class="sign-in">Sign in</button>
+            <button class="sign-up">Sign Up</button>
+        </div>
+    </header>
+
+    <main>
+        <section class="companies-hero">
+            <h1>Explore Top Companies</h1>
+            <p>Discover companies hiring now and learn about their culture, benefits, and open positions.</p>
+        </section>
+
+        <section class="company-search">
+            <div class="search-bar">
+                <input type="text" placeholder="Search companies by name or industry">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="industry-tags">
+                <span class="tag active">All</span>
+                <span class="tag">Technology</span>
+                <span class="tag">Finance</span>
+                <span class="tag">Healthcare</span>
+                <span class="tag">Retail</span>
+                <span class="tag">Education</span>
+            </div>
+        </section>
+
+        <section class="companies-list">
+            <div class="companies-container">
+                <!-- Companies will be loaded here by JavaScript -->
+            </div>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
