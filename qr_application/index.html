@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Scanner</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container d-flex flex-column flex-md-row justify-content-center align-items-center min-vh-100">
+        <div class="scan-container">
+            <div class="scan-header">
+                <div class="scan-icon">
+                    <i class="fas fa-qrcode"></i>
+                </div>
+                <h3>QR Code Scanner</h3>
+                <p class="instruction-text" id="statusText">Point your camera at the QR code to scan</p>
+            </div>
+            
+            <div class="qr-display">
+                <video id="scanner-video" playsinline style="display: none;"></video>
+                <canvas id="scanner-canvas" style="display: none;"></canvas>
+                <div id="scanner-view"></div>
+                <div id="scanner-placeholder">
+                    <i class="fas fa-camera"></i>
+                </div>
+            </div>
+            
+            <div class="action-buttons">
+                <button class="btn btn-scan" id="startScanBtn">
+                    <i class="fas fa-camera"></i> Scan
+                </button>
+                <button class="btn btn-upload" id="uploadBtn">
+                    <i class="fas fa-upload"></i> Upload
+                </button>
+                <button class="btn btn-stop" id="stopScanBtn" style="display: none;">
+                    <i class="fas fa-stop"></i> Stop
+                </button>
+            </div>
+            
+            <input type="file" id="fileInput" accept="image/*" style="display: none;">
+        </div>
+        
+        <div class="result-container" id="resultContainer">
+            <div class="result-content">
+                <div class="success-message">
+                    <i class="fas fa-check-circle"></i> QR code scanned successfully!
+                </div>
+                <h4 class="results-heading">Scan Results</h4>
+                <div class="result-box" id="resultContent">
+                    <p class="placeholder-text">Scan results will appear here</p>
+                </div>
+                <div class="result-actions">
+                    <button class="btn btn-copy" id="copyBtn">
+                        <i class="fas fa-copy"></i> Copy
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
